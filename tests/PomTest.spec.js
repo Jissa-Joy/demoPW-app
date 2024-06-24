@@ -18,6 +18,7 @@ await login.login('jisaj','test123')
 const home = new HomePage(page)
 await home.addProductToCart()
 //Home
+//checking if code is updating in git
 
 const cart = new CartPage(page)
 await cart.placeOrder();

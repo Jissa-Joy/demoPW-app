@@ -14,7 +14,7 @@ exports.HomePage =
             
             }
 
-
+//can be removed below code - as pw auto handles Alert Dialogs
            /* await this.page.on('dialog',async dialog =>{
                 if(dialog.message().includes('added'))
                     {
