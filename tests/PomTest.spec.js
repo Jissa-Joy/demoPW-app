@@ -4,6 +4,7 @@ import { LoginPage } from '../pages/LoginPage';*/
 const { test, expect } = require('@playwright/test');
 const {LoginPage} = require('../pages/LoginPage')
 const {HomePage} = require('../pages/HomePage')
+const {CartPage} = require ('../pages/CartPage')
 
 test('POM Test cases', async({page}) =>
 {
@@ -17,4 +18,7 @@ await login.login('jisaj','test123')
 const home = new HomePage(page)
 await home.addProductToCart()
 //Home
+
+const cart = new CartPage(page)
+await cart.placeOrder();
 });
